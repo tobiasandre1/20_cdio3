@@ -3,6 +3,12 @@ package dataLayer;
 import java.sql.DriverManager;
 
 public class DBConnector {
+	
+	/* 
+	 * HOW TO USE:
+	 * DBConnector dbcon = new DBConnector();
+	 * dbcon.getData();
+	 */
 
 	private java.sql.Connection con;
 	private java.sql.Statement st;
