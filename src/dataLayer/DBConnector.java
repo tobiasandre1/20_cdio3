@@ -1,13 +1,14 @@
 package dataLayer;
 
 import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class DBConnector {
 	
 	/* 
 	 * HOW TO USE:
 	 * DBConnector dbcon = new DBConnector();
-	 * dbcon.getData();
+	 * dbcon.executeQuery("SELECT * FROM table;"); / dbcon.getData("SELECT * FROM table;");
 	 */
 
 	private java.sql.Connection con;
@@ -31,6 +32,17 @@ public class DBConnector {
 			System.out.println("DBConnectError: "+e);
 		}
 		
+	}
+	
+	public void executeQuery(String query){
+		try{
+			System.out.println(query);
+			rs = st.executeQuery(query);
+			System.out.println("Query successful!");
+		}catch(SQLException e){
+			System.out.println("executeQueryError: "+e);
+			e.printStackTrace();
+		}
 	}
 	
 	public void getData(String query){
