@@ -14,13 +14,17 @@ public class DBConnector {
 	private java.sql.Statement st;
 	private java.sql.ResultSet rs;
 	
-	private String dataBaseName = "20_weightdb";
+	private String DATABASE = "20_weightdb";
+	private String HOST = "localhost";
+	private int PORT = 3306;
+	private String USER = "root";
+	private String PASSWORD = "";
 	
 	public DBConnector(){
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 			
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/"+dataBaseName, "root", "");
+			con = DriverManager.getConnection("jdbc:mysql://" + HOST +":" + PORT + "/" +DATABASE, USER, PASSWORD);
 			st = con.createStatement();
 		
 		}catch(Exception e){
