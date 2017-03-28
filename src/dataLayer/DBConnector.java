@@ -33,9 +33,8 @@ public class DBConnector {
 		
 	}
 	
-	public void getData(){
+	public void getData(String query){
 		try{
-			String query = "SELECT * FROM operatoer;";
 			rs = st.executeQuery(query);
 			System.out.println("Result");
 			while(rs.next()){
@@ -44,8 +43,8 @@ public class DBConnector {
 			}
 			
 		}catch(Exception e){
-			e.printStackTrace();
 			System.out.println("getDataError: "+e);
+			e.printStackTrace();
 		}
 	}
 	

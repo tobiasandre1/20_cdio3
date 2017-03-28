@@ -10,7 +10,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		DBConnector dbcon = new DBConnector();
-		dbcon.getData();
+		dbcon.getData("SELECT * FROM operatoer;");
 	}
 
 }
