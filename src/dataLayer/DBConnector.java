@@ -42,6 +42,9 @@ public class DBConnector {
 		}catch(SQLException e){
 			System.out.println("executeQueryError: "+e);
 			e.printStackTrace();
+		}catch(Exception e){
+			System.out.println("executeQueryError: "+e);
+			System.out.println("Well... Something very weird has happened if you see this message...");
 		}
 	}
 	
