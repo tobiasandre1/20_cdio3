@@ -30,5 +30,10 @@ public class RaavareDTO {
 		this.leverandoer = leverandoer;
 	}
 	
+	@Override
+	public String toString() {
+		return "RaavareDTO [id=" + raavare_id + ", navn=" + raavare_navn + ", leverandoer=" + leverandoer;
+	}
+	
 	
 }
