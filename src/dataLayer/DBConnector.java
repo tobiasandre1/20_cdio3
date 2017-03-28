@@ -36,7 +36,7 @@ public class DBConnector {
 			System.out.println("Result");
 			while(rs.next()){
 				String exampleData = rs.getString("opr_id");
-				System.out.println(exampleData);
+				System.out.println(exampleData + "  " + rs.getString("opr_navn"));
 			}
 			
 		}catch(Exception e){
