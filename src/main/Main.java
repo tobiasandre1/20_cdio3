@@ -1,9 +1,6 @@
 package main;
 
-import presentationLayer.*;
-import functionalityLayer.*;
 import dataLayer.*;
-import dataTransferObject.*;
 
 
 public class Main {
