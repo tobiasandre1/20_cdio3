@@ -1,11 +1,11 @@
 package dataTransferObject;
 
-public class RaavareBatch {
+public class RaavareBatchDTO {
 	private int rb_id;
 	private int raavare_id;
 	private int maengde;
 	
-	public RaavareBatch(int rb_id, int raavare_id, int maengde) {
+	public RaavareBatchDTO(int rb_id, int raavare_id, int maengde) {
 		this.rb_id = rb_id;
 		this.raavare_id = raavare_id;
 		this.maengde = maengde;
