@@ -4,7 +4,7 @@ import java.util.List;
 
 import dataTransferObject.ReceptKomponentDTO;
 
-public interface ReceptKompDAO {
+public interface ReceptKomponentDAO {
 	ReceptKomponentDTO getReceptKomp(int receptId, int raavareId) throws DALException;
 	List<ReceptKomponentDTO> getReceptKompList(int receptId) throws DALException;
 	List<ReceptKomponentDTO> getReceptKompList() throws DALException;
