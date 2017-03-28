@@ -32,7 +32,12 @@ public class RaavareBatch {
 	}
 
 	public void setMaengde(int maengde) {
-		this.maengde = maengde;
+		if(maengde > 0){
+			this.maengde = maengde;
+		}
+		else{
+			this.maengde = 0;
+		}
 	}
 	
 	
