@@ -1,13 +1,14 @@
 package main;
 
 import dataLayer.*;
+import dataLayerInterfaces.*;
  
 
 public class Main {
 
-	public static void main(String[] args) {
-		DBConnector dbcon = new DBConnector();
-		dbcon.getData("SELECT * FROM operatoer;");
+	public static void main(String[] args) throws DALException {
+		IOperatoerDAO opr = new OperatoerDAO();
+		System.out.println(opr.getOperatoer(3));
 	}
 
 }

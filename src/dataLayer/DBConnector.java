@@ -11,9 +11,9 @@ public class DBConnector {
 	 * dbcon.executeQuery("SELECT * FROM table;"); / dbcon.getData("SELECT * FROM table;");
 	 */
 
-	private java.sql.Connection con;
-	private java.sql.Statement st;
-	private java.sql.ResultSet rs;
+	protected java.sql.Connection con;
+	protected java.sql.Statement st;
+	protected java.sql.ResultSet rs;
 	
 	private String DATABASE = "20_weightdb";
 	private String HOST = "localhost";

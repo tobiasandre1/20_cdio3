@@ -15,6 +15,10 @@ public class OperatoerDTO {
 		this.password = password;
 	}
 	
+	public OperatoerDTO(){
+		//This is for creating the object but assigning the values later
+	}
+	
 	public int getOpr_id() {
 		return opr_id;
 	}
@@ -48,7 +52,7 @@ public class OperatoerDTO {
 	
 	@Override
 	public String toString() {
-		return "Operatoer [ID=" + opr_id + ", Name=" + opr_navn + ", Initials=" + ini; //We don't print the CPR or the password
+		return "Operatoer [ID=" + opr_id + ", Name=" + opr_navn + ", Initials=" + ini + "]"; //We don't print the CPR or the password
 	}
 	
 }
