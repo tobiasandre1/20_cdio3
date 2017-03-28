@@ -46,4 +46,9 @@ public class OperatoerDTO {
 		this.password = password;
 	}
 	
+	@Override
+	public String toString() {
+		return "Operatoer [ID=" + opr_id + ", Name=" + opr_navn + ", Initials=" + ini; //We don't print the CPR or the password
+	}
+	
 }
