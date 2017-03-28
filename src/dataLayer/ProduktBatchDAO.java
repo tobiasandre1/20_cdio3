@@ -5,7 +5,7 @@ import java.util.List;
 import dataLayerInterfaces.DALException;
 import dataTransferObject.ProduktBatchDTO;
 
-public class ProduktBatchDAO implements dataLayerInterfaces.ProduktBatchDAO {
+public class ProduktBatchDAO implements dataLayerInterfaces.IProduktBatchDAO {
 
 	@Override
 	public ProduktBatchDTO getProduktBatch(int pbId) throws DALException {
