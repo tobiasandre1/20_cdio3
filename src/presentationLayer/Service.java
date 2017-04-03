@@ -1,7 +1,9 @@
 package presentationLayer;
 
+import javax.ws.rs.core.Application;
 
-//@PATH("Service")
-public class Service {
+public class Service extends Application {
 
+	
+	
 }
