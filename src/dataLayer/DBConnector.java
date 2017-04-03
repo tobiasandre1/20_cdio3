@@ -15,7 +15,7 @@ public class DBConnector {
 	protected java.sql.Statement st;
 	protected java.sql.ResultSet rs;
 	
-	private String DATABASE = "20_weightdb";
+	private String DATABASE = "20_weightdb.sql";
 	private String HOST = "localhost";
 	private int PORT = 3306;
 	private String USER = "root";
