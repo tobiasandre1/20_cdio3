@@ -48,7 +48,7 @@ public class DBConnector {
 			e.printStackTrace();
 		}catch(Exception e){
 			System.out.println("executeQueryError: "+e);
-			System.out.println("Well... Something very weird has happened if you see this message...");
+			System.out.println("Well... Something weird has happened if you see this message...");
 		}
 	}
 	
