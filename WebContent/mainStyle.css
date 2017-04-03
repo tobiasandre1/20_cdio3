@@ -8,6 +8,14 @@ p {
 
 }
 
+input[type="submit"]{
+	
+}
+
+input[type="text"], input[type="password"]{
+	
+}
+
 .mainbody{
 	
 }
@@ -15,3 +23,4 @@ p {
 .loginbox{
 	
 }
+
