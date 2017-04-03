@@ -3,9 +3,10 @@ package dataLayer;
 import java.util.ArrayList;
 import java.util.List;
 
+import dataLayerInterfaces.IUserDAO;
 import dataTransferObject.UserDTO;
 
-public class NonPersistentUserDAL implements IUserDAL{
+public class NonPersistentUserDAL implements IUserDAO{
 	List<UserDTO> userList = new ArrayList<UserDTO>();
 	
 	
