@@ -42,6 +42,10 @@ public class DBConnector {
 		}catch(SQLException e){
 			System.out.println("executeQueryError: "+e);
 			e.printStackTrace();
+		}catch(NullPointerException e){
+			System.out.println("executeQueryError: "+e);
+			System.out.println("Your database might not be on, or no database with the current name exists");
+			e.printStackTrace();
 		}catch(Exception e){
 			System.out.println("executeQueryError: "+e);
 			System.out.println("Well... Something very weird has happened if you see this message...");
