@@ -7,6 +7,7 @@ body {
 h1 {
 	display: block;
 	margin: auto;
+	font-size: 2.5em;
 }
 
 p {
@@ -22,14 +23,17 @@ table {
 input[type="submit"]{
 	display: block;
 	margin: auto;
-	padding: 0.1em 4em;
+	padding: 0.2em 4em;
 	width: auto;
 	font-family: courier new;
 	font-size: 1em;
+	border-radius: 3em;
 }
 
 input[type="text"], input[type="password"]{
-	
+	padding: 0.2em;
+	font-family: courier new;
+	font-size: 1em;
 }
 
 form {
